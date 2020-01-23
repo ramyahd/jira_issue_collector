@@ -1,0 +1,13 @@
+pipeline{
+agent any
+stages{
+
+stage('Jenkins job'){
+ 
+            steps {
+                sh 'curl -u bhatramya974@gmail.com:jSDddzt0Fk5NqqzOvmhS647F --request GET https://ramyabhat97.atlassian.net/projects/JIR/issues'
+            }
+        }
+        
+ }
+ }

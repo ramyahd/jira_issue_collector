@@ -1,0 +1,15 @@
+pipeline{
+agent any
+stages{
+
+stage('Jenkins job'){
+steps{
+ 
+sh 'curl --request GET \
+  --url 'https://ramyabhat97.atlassian.net/browse/JIR-2'
+  --user 'bhatramya974@gmail.com:jSDddzt0Fk5NqqzOvmhS647F' \
+  --header 'Accept: application/json'
+  }
+  }
+  }
+  }

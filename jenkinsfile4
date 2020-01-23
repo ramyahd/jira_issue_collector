@@ -1,0 +1,20 @@
+pipeline{
+agent any
+stages{
+
+stage('Jenkins job'){
+steps{
+ 
+sh ' curl -D- -u bhatramya974@gmail.com:Ramyahd@97 -X GET \
+-H "Content-Type: application/json" \
+  --url "https://ramyabhat97.atlassian.net/projects/JIR" \
+  --user "bhatramya974@gmail.com:jSDddzt0Fk5NqqzOvmhS647F" \
+  --header "Authorization: Bearer" \
+  --header "Accept: application/json" '
+  }
+   stage('collecting') {
+            steps {
+        sh 'curl -X GET -v -G https://ramyabhat97.atlassian.net/projects/JIR/api/issues/search?'
+  }
+  }
+  }
